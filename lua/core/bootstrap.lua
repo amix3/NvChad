@@ -41,13 +41,13 @@ M.gen_chadrc_template = function()
     local input = "N"
 
     if next(vim.api.nvim_list_uis()) then
-      input = vim.fn.input "Do you want to install example custom config? (y/N) : "
+      input = vim.fn.input "Do you want to install the amix3 custom neovim config? (y/N) : "
     end
 
     -- clone example_config repo
     if input == "y" then
       M.echo "cloning example custom config repo ..."
-      shell_call { "git", "clone", "--depth", "1", "https://github.com/NvChad/example_config", path }
+      shell_call { "git", "clone", "--depth", "1", "https://github.com/amix3/nvim_config", path }
       vim.fn.delete(path .. ".git", "rf")
     else
       -- use very minimal chadrc

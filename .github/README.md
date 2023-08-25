@@ -22,6 +22,25 @@
 [![Telegram](https://img.shields.io/badge/Telegram-blue.svg?style=flat-square&logo=Telegram&logoColor=white)](https://t.me/DE_WM)
 
   </div>
+  
+## Installation (amix3 fork)
+
+**Linux / Macos**
+
+    git clone https://github.com/amix3/NvChad ~/.config/nvim --depth 1 && nvim
+
+**Windows**
+
+    git clone https://github.com/amix3/NvChad $HOME\AppData\Local\nvim --depth 1 && nvim
+
+
+ if the above path doesnt work, try any of these paths :
+
+    %LOCALAPPDATA%\nvim 
+
+    %USERPROFILE%AppDataLocal\nvim 
+
+    C:Users%USERNAME%AppDataLocal\nvim
 
 ## Showcase
 
